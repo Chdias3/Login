@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--PAGE INFO-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/icons/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--FONTS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--LOGIN-->
+    <!--aqui contem todo o conteudo-->
+    <div id="login-container">
+      <h1>Login</h1>
+
+    <!--form é o formulario..vai ter 3 input ..email/senha/submit que envia o form para o servidor processar os dados e verificar se o usuario pode fazer login ou nao-->
+      <form action="">
+        <!--label serve para identificar o input...ela tem um atributo chamado for que é representado com o email-->
+        <label for="email">E-mail</label>
+        <!--placeholder é um atributo de um texto esplicativo que fica para o usuario do que ele deve preencher...autocomplete vai dizer que esse atributo ou campo nao tem auto completar para nao ficar aparecendo varios email embaixo-->
+        <input
+          type="email"
+          nome="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+          autocomplete="off"
+        />
+        <label for="password">Senha</label>
+
+        <!--type="password" para aparecer as bolinhas em vez do texto...name que é o mesmo proposito do email envia para o back end se comunica pelo name-->
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite a sua senha"
+        />
+
+        <!--forgot-pass sig. esqueceu a senha..clica e vai para outra pagina-->
+        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+
+        <!--submit faz o envio das informaçoes do formulario para o servidor...value="Login" cria esse texto login-->
+        <input type="submit" value="Login" />
+      </form>
+
+      <!--REDES SOCIAIS-->
+      <div id="social-container">
+        <p>Ou entre pelas suas redes sociais</p>
+        <i class="icon-facebook"></i>
+        <i class="icon-instagram"></i>
+      </div id="register-container">
+      <p>Ainda não tem uma conta?</p>
+      <a href="#">Registrar</a>
+
+      <div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
